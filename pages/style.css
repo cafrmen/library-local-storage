@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: rgb(34, 34, 34);
+    background-color: #F8F1F1;
+    font-size: 1.2em;
+}
+
+header {
+    width: 100vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    color: #F8F1F1;
+    background-color: #025464;
+}
+
+#displayInfo, #displayForm {
+    width: 30px;
+    height: 30px;
+    font-family: sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 50%;
+    border: 3px solid #9EC8B9;
+    color: #9EC8B9;
+    background-color: #F8F1F1;
+    transition: 3s ease-in-out;
+}
+
+#displayInfo:hover, #displayForm:hover {
+    rotate: 360deg;
+}
+
+main {
+    width: 100vw;
+}
+
+.books {
+    margin: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+th {
+    text-align: center;
+    color: #F8F1F1;
+    background-color: #025464;
+}
+
+td {
+    text-align: center;
+    color: #025464;
+    background-color: rgba(255, 212, 178, 0.55);
+}
+
+button.delete {
+    background-color: transparent;
+    border: none;
+}
+
+form {
+    display: none;
+    visibility: hidden;
+    width: 210px;
+    padding: 12px;
+    color: #F8F1F1;
+    background-color: #025464;
+    border: 3px solid #9EC8B9;
+    border-radius: 7px;
+    box-shadow: 2px 2px 2px rgba(2, 84, 100, 0.7);
+    z-index: 1;
+}
+
+input[type = text], input[type = number] {
+    width: 100%;
+    font-family: sans-serif;
+}
+
+input {
+    margin-bottom: 7px;
+    border-radius: 7px;
+    border: 1px solid #9EC8B9;
+    color: #025464;
+    background-color: #F8F1F1;
+}
+
+input[type = checkbox] {
+    margin-bottom: 12px;
+}
+
+form>button {
+    display: block;
+    margin: 0 auto;
+    font-family: sans-serif;
+    font-size: 1em;
+    justify-content: center;
+    border-radius: 7px;
+    border: 3px solid #F8F1F1;
+    color: #F8F1F1;
+    background-color: #9EC8B9;
+    transition: 0.7s ease-in-out;
+}
+
+form>button:hover {
+    color: #9EC8B9;
+    background-color: #F8F1F1;
+    border-color: #9EC8B9;
+}
+
+.show {
+    display: block;
+    visibility: visible;
+    position: absolute;
+    left: 7vw;
+    bottom: 7vw;
+}
+
+.books {
+    padding-top: 12px;
+}

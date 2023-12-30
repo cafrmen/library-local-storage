@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./pages/style.css">
+    <script src="./pages/app.js" defer></script>
+    <title>Caf Library</title>
+</head>
+<body>
+    <header>
+        <h1>LS Library</h1>
+        <div class="about">
+            <button id="displayInfo" type="button">?</button>
+        </div>
+        <div class="add">
+            <button id="displayForm" type="button">+</button>
+        </div>
+    </header>
+    <main>
+        <section class="books">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Pages</th>
+                        <th>Read</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody"></tbody>
+            </table>
+        </section>
+        <section class="form">
+            <form id="form">
+                <div>
+                    <label for="title">Title:</label>
+                    <br>
+                    <input type="text" id="title" name="Title">
+                </div>
+                <div>
+                    <label for="author">Author:</label>
+                    <br>
+                    <input type="text" id="author" name="Author">
+                </div>
+                <div>
+                    <label for="pages">Pages:</label>
+                    <br>
+                    <input type="number" id="pages" name="Pages">
+                </div>
+                <div>
+                    <label for="isRead">Is read?</label>
+                    <input type="checkbox" id="isRead" name="Is Read">
+                </div>
+                <button id="addBook" type="button">Add Book</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
